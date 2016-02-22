@@ -1,6 +1,6 @@
 # ETSII ULL Grado de Informatica
 
-# Test
+# Test2
 
 ## Práctica: Conversor en JavaScript de grados Celsius a Farenheit y viceversa
 
