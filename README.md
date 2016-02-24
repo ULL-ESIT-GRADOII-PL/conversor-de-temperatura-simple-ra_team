@@ -3,27 +3,33 @@
 ## Team: Adrián Rodríguez Bazaga (AdrianBZG) & Rudolf Cicko (alu0100824780)
 
 ### Despliegue en github.io:
-* [Click aquí](http://adrianbzg.github.io/PL_SimpleTemperatureConverter/temp.html)
+* [Click aquí](http://adrianbzg.github.io/PL_SimpleTemperatureConverter/index.html)
 
-### Ejecutar las pruebas
+### Desarrolladores
 
-* [Click aquí](http://adrianbzg.github.io/PL_SimpleTemperatureConverter/tests/index.html)
+#### Adrián Rodríguez Bazaga
+  - Email: arodriba@ull.edu.es
+  - [Página personal](http://adrianbzg.github.io)
+
+#### Rudolf Cicko
+  - Email: alu0100824780@ull.edu.es
+  - [Página personal](http://alu0100824780.github.io)
 
 ### Diferencias con la versión en la rama `master`
 
 * En la rama `html5pattern` el tag `<input>` se metió dentro de una form.
 
-        <form id="formulario" onsubmit="calculate();">
+        <form id="formulario" onsubmit="convert();">
 
   mientras que en la rama `master` estaba fuera 
 
 * Además el `<input>` está controlado con el atributo `pattern` HTML5 de `<input>`:
 
         <input id="original"
-               placeholder="32F"
+               placeholder="40C"
                size="50"
-               title = "Escribe un número seguido de una de las letras 'F' o 'C'"
-               pattern="([-+]?\d+(?:\.\d*)?)\s*([fFcC])"
+               title = "You should read the 'Usage' and the 'Input examples' sections"
+               pattern="^(([-+]?\d+(?:\.\d*)?(?:e[-+]?\d+)?)\s*((?:[fF](?:[aA](?:[rR](?:[eE](?:[nN](?:[hH](?:[eE](?:[iI](?:[tT])?)?)?)?)?)?)?)?)|(?:[cC](?:[eE](?:[lL](?:[sS](?:[iI](?:[uU](?:[sS])?)?)?)?)?)?)|(?:[kK](?:[eE](?:[lL](?:[vV](?:[iI](?:[nN])?)?)?)?)?))$)"
         />
 
 * El fichero `pattern.html` tiene ejemplos de como usar el atributo `pattern`
@@ -39,6 +45,6 @@
             </fieldset>
           </form>
 
-* En esta rama en `temperature.js` se usa `alert` para enviar los mensajes en vez de insertarlos en la página con el método `innerHTML`.
+* En esta rama en `convert.js` se usa `alert` para enviar los mensajes en vez de insertarlos en la página con el método `innerHTML`.
 
 * Véase también [HTML `<input>` pattern Attribute in W3Schools](http://www.w3schools.com/tags/att_input_pattern.asp)
