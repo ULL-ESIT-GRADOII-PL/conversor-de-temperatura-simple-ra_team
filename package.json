@@ -1,6 +1,5 @@
 {
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "*",
     "mocha": "*"
@@ -8,18 +7,23 @@
   "name": "temperature",
   "description": "ETSII ULL Grado de Informatica",
   "version": "1.0.0",
-  "main": "temperature.js",
+  "main": "converter.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "open tests/index.html # mac OS"
+    "test": "open tests/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@bitbucket.org/casiano/pl-grado-temperature-converter.git"
+    "url": "https://github.com/AdrianBZG/PL_SimpleTemperatureConverter",
+    "email": "arodriba@ull.edu.es"
   },
-  "author": "Casiano",
+  "author": "Adrian Rodríguez Bazaga",
   "license": "ISC",
-  "homepage": "https://github.com/crguezl/ull-etsii-grado-pl-1213-temperature-converter/tree/gh-pages"
+  "homepage": "https://github.com/crguezl/ull-etsii-grado-pl-1213-temperature-converter/tree/gh-pages",
+  "keywords": [
+    "regexp"
+  ],
+  "contributors": "Rudolf Cicko"
 }
