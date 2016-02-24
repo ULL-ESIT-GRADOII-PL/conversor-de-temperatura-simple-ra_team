@@ -1,5 +1,5 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
-function calculate() {
+function convert() {
   var result;
   var temp = original.value;
   var regexp = /([+-]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([cf])/i;
