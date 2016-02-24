@@ -3,7 +3,6 @@ td {
     vertical-align: top;
     text-align: right;
     font-size: medium;
-    border: 1px dashed black;
 }
 /* Don't center table cells  */
 
@@ -24,16 +23,16 @@ input {
     font-size: large;
 }
 body {
-    background-color: #b0c4de;
+    background-color: #A1D490;
     /* blue */
     
-    font-size: large;
+    font-size: medium;
     font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 }
 h1 {
     font-weight: normal;
     font-family: "Brush Script MT", cursive;
-    background: #3C5681;
+    background: #339612;
     padding: 5px 15px;
     color: white;
     display: inline-block;
