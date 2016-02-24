@@ -9,22 +9,29 @@
      <script type="text/javascript" src="converter.js"></script>
   </head>
   <body>
-    <h1>Temperature Converter</h1>
+    <h1>Temperature Converter
+    <img id="image" src="http://static1.squarespace.com/static/525dcddce4b03a9509e033ab/t/526825c6e4b0a6ea6c30deab/1382557127253/temperature.png" width="100" />
+    </h1>
+    <center>
     <table>
-      <tr>
+      <tr id="title">
         <th>Enter  Temperature (examples: 32F, 45C, -2.5f, 1000E-2f, 1E3F):</th>
       </tr>
-      <tr>
-        <td><span class="output" id="converted"></span></td>
+      <tr id="input">
+        <th><input id="original" autofocus onchange="convert();" placeholder="50C" size="50"></th>
       </tr>
+
+      <tr bgcolor="#FFFFFF" style="line-height:10px;" colspan=3> </tr>
+
       <tr>
-        <td>To use this program you st introduce PEPE</td>
-        <td><input id="original" autofocus onchange="convert();" placeholder="50C" size="50"></td>
+        <th><span class="output" id="converted"></span></th>
       </tr>
+      
     </table>
-    
-    <p><img style="float: left; margin: 0px 15px 15px 0px;" src="http://static1.squarespace.com/static/525dcddce4b03a9509e033ab/t/526825c6e4b0a6ea6c30deab/1382557127253/temperature.png" width="100" />
-Nunc pulvinar lacus id purus ultrices id sagittis neque convallis. Nunc vel libero orci. 
-<br style="clear: both;" /></p>
+  </center>
+      <center>
+  Usage of this Temperature Converter:
+
+    </center>
   </body>
 </html>
