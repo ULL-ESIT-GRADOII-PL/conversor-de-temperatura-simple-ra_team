@@ -42,3 +42,8 @@ h1 {
 .floating-box {
     display: inline-block;
 }
+
+li {
+    display: inline;
+}
+}
