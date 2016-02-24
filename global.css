@@ -5,14 +5,13 @@ td {
     font-size: medium;
     align-items: center;
 }
-/* Don't center table cells  */
 
 #converted {
     color: purple;
     font-weight: italic;
     font-size: medium;
 }
-/* Calculated values in bold */
+/* Calculated values in italic */
 
 input {
     text-align: right;
@@ -25,7 +24,7 @@ input {
 }
 body {
     background-color: #A1D490;
-    /* blue */
+    /* green */
 
     font-size: medium;
     font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
