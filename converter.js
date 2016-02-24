@@ -3,7 +3,7 @@ function convert() {
   var result;
   var result2;
   var temp = original.value;
-  var regexp = /([+-]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([cf])/i;
+  var regexp = /([+-]?\d+(?:\.\d+)?(?:e[+-]?\d+)?)\s*([cfk])/i;
 
   var m = temp.match(regexp);
 
@@ -12,13 +12,18 @@ function convert() {
     var type = m[2];
     num = parseFloat(num);
     if (type == 'c' || type == 'C') {
-      result = (num * 9/5)+32;
-      result = result.toFixed(1)+" Farenheit";
+      result = (num * 9/5) + 32;
+      result = result.toFixed(1) + " Farenheit";
       result2 = num + 273.15 + " Kelvin";
     }
+    else if (type == 'f' || type == 'F'){
+      result = (num - 32) * 5/9;
+      result2 = ((num + 459.67) + 5/9) + " Kelvin";
+      result = result.toFixed(1) + " Celsius";
+    }
     else {
-      result = (num - 32)*5/9;
-      result = result.toFixed(1)+" Celsius";
+      result = (num - 273.15) + " Celsius";
+      result2 = ((num * 9/5) - 459.67) + " Farenheit";
     }
     converted.innerHTML = result + "<br/>" + result2;
   }
