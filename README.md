@@ -45,3 +45,5 @@ Utilizamos nodejs para comprobar con .exec("cadena") si la expresión regular de
             <script src=" http://chaijs.com/chai.js"></script> 
           -->
          <script src="../node_modules/chai/chai.js"></script> <!-- it works -->
+  
+[Página de la asignatura](https://campusvirtual.ull.es/1516/course/view.php?id=178)
