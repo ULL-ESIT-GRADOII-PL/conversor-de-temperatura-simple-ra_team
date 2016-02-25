@@ -1,21 +1,71 @@
-# ETSII ULL Grado de Informatica
+# Práctica: Conversor en JavaScript de grados Celsius a Farenheit y viceversa
+## ESIT ULL - Grado en Ingeniería Informática - Tercer Curso - Itinerario: Computación
+## Team: Adrián Rodríguez Bazaga (AdrianBZG) & Rudolf Cicko (alu0100824780)
 
-## Práctica: Conversor en JavaScript de grados Celsius a Farenheit y viceversa
+### Despliegue en github.io:
+* [Click aquí](http://ull-esit-gradoii-pl.github.io/conversor-de-temperatura-simple-ra_team/)
 
-### Que aprendemos
+### Desarrolladores
 
-* HTML básico
-* JavaScript básico
-* Expresiones Regulares
-* Un poquito de CSS
-* Uso de Emmet (instale el plugin para su editor)
-* Uso de Mocha y Chai 
-* Uso de Gulp
+#### Adrián Rodríguez Bazaga
+  - Email: arodriba@ull.edu.es
+  - [Página personal](http://adrianbzg.github.io)
 
-### Despliegue en github.io
+#### Rudolf Cicko
+  - Email: alu0100824780@ull.edu.es
+  - [Página personal](http://alu0100824780.github.io)
 
-* [http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/](http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/)
+#### Expresiones Regulares
 
-### Ejecutar las pruebas
+Se ha hecho uso de:
 
-* [http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/tests/index.html](http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/tests/index.html)
+* Anclas ^ y $.
+* Paréntesis ( ), y especiales (?: ).
+* Corchetes [ ] para los rangos.
+* \d para los dígitos exponenciales.
+* La opción: i, para que acepte mayúsculas o minúsculas.
+
+#### Emmet
+
+Para instalar Emmet en Atom, debemos ir a "Packages" -> "Settings View" -> "Install Packages/Themes", buscamos el paquete Emmet y le damos a Install.
+![Emmet](http://i.imgur.com/6smWZ3K.png?1 "Emmet")
+
+#### ¿Cómo hemos ido probando que la expresión regular era correcta?
+
+Utilizamos nodejs para comprobar con .exec("cadena") si la expresión regular detectaba correctamente las cadenas que debería.
+
+### Diferencias con la versión en la rama `master`
+
+* En la rama `html5pattern` el tag `<input>` se metió dentro de una form.
+
+        <form id="formulario" onsubmit="convert();">
+
+  mientras que en la rama `master` estaba fuera 
+
+* Además el `<input>` está controlado con el atributo `pattern` HTML5 de `<input>`:
+
+        <input id="original"
+               placeholder="40C"
+               size="50"
+               title = "You should read the 'Usage' and the 'Input examples' sections"
+               pattern="^(([-+]?\d+(?:\.\d*)?(?:e[-+]?\d+)?)\s*((?:[fF](?:[aA](?:[rR](?:[eE](?:[nN](?:[hH](?:[eE](?:[iI](?:[tT])?)?)?)?)?)?)?)?)|(?:[cC](?:[eE](?:[lL](?:[sS](?:[iI](?:[uU](?:[sS])?)?)?)?)?)?)|(?:[kK](?:[eE](?:[lL](?:[vV](?:[iI](?:[nN])?)?)?)?)?))$)"
+        />
+
+* El fichero `pattern.html` tiene ejemplos de como usar el atributo `pattern`
+
+          <form>
+            <fieldset>
+              <p><label>Caracteres alfanuméricos:</label><input type="text" pattern="[a-zA-Z0-9]+" /></p>
+              <p><label>Letras:</label><input type="text" pattern="[a-zA-Z]+" /></p>
+              <p><label>Números:</label><input type="text" pattern="[0-9]+" /></p>
+              <p><label>Fecha (dd/mm/YYYYYY):</label><input type="text" pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" /></p>
+              <p><label>Email:</label><input type="text" pattern="[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+" /></p>
+              <input id="final" type="submit" value="Aceptar" />
+            </fieldset>
+          </form>
+
+* En esta rama en `convert.js` se usa `alert` para enviar los mensajes en vez de insertarlos en la página con el método `innerHTML`.
+
+* Véase también [HTML `<input>` pattern Attribute in W3Schools](http://www.w3schools.com/tags/att_input_pattern.asp)
+
+[Página de la asignatura](https://campusvirtual.ull.es/1516/course/view.php?id=178)

@@ -1,6 +1,6 @@
 var assert = chai.assert;
 
-suite('temperature', function() {
+suite('converter', function() {
     test('32F = 0C', function() {
         original.value = "32F";
         calculate();
@@ -17,4 +17,3 @@ suite('temperature', function() {
         assert.match(converted.innerHTML, /ERROR/);
     });
 });
-
