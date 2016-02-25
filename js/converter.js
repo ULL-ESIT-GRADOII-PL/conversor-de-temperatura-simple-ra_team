@@ -3,7 +3,7 @@ function convert() {
     var result;
     var result2;
     var temp = original.value;
-    var regexp = (/^([-+]?\d+(?:\.\d*)?(?:e[-+]?\d+)?)\s*((?:[fF](?:[aA](?:[hH](?:[rR](?:[eE](?:[nN](?:[hH](?:[eE](?:[iI](?:[tT])?)?)?)?)?)?)?)?)?)|(?:[cC](?:[eE](?:[lL](?:[sS](?:[iI](?:[uU](?:[sS])?)?)?)?)?)?)|(?:[kK](?:[eE](?:[lL](?:[vV](?:[iI](?:[nN])?)?)?)?)?))\s*$/i);
+    var regexp = (/^([-+]?\d+(?:\.\d*)?(?:e[-+]?\d+)?)\s*((?:[fF](?:[aA](?:[rR](?:[eE](?:[nN](?:[hH](?:[eE](?:[iI](?:[tT])?)?)?)?)?)?)?)?)|(?:[cC](?:[eE](?:[lL](?:[sS](?:[iI](?:[uU](?:[sS])?)?)?)?)?)?)|(?:[kK](?:[eE](?:[lL](?:[vV](?:[iI](?:[nN])?)?)?)?)?))\s*$/i);
     var m = temp.match(regexp);
 
     if (m) {
@@ -22,8 +22,8 @@ function convert() {
             result = (value - 273.15) + " Celsius";
             result2 = ((value * 9 / 5) - 459.67) + " Farenheit";
         }
-        converted.innerHTML = result + "<br/>" + result2;
+        alert(result);
     } else {
-        converted.innerHTML = "Invalid input! Please read the 'Usage' and 'Input Examples' sections.";
+        alert("Invalid input! Please read the 'Usage' and 'Input Examples' sections.");
     }
 }
