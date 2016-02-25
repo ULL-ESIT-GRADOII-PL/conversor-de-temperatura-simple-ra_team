@@ -1,24 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>JavaScript Temperature Converter</title>
-     <link href="normalize.css" rel="stylesheet" type="text/css">
-     <link href="global.css" rel="stylesheet" type="text/css">
 
-     <script type="text/javascript" src="temperature.js"></script>
-  </head>
-  <body>
-    <h1>Temperature Converter</h1>
-    <table>
-      <tr>
-        <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
-        <td><input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td>
-      </tr>
-      <tr>
-        <th>Converted Temperature:</th>
-        <td><span class="output" id="converted"></span></td>
-      </tr>
-    </table>
-  </body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  	<meta name="description" content="Temperature Converter using JavaScript">
+	<meta name="keywords" content="HTML,CSS,JavaScript,Temperature,Converter,PL,Language Processors">
+	<meta name="author" content="Adrián Rodríguez Bazaga, Rudolf Cicko">
+    <title>Language Processors - Temperature Converter using JavaScript</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/global.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/converter.js"></script>
+</head>
+
+<body>
+
+    <h1>Temperature Converter
+
+    <img id="image" src="images/temperature.png" width="100" />
+    </h1>
+
+
+
+    <center>
+        <table>
+            <tr id="title">
+                <th>Enter Temperature:</th>
+            </tr>
+            <tr id="input">
+                <th>
+                    <input id="original" autofocus onchange="convert();" placeholder="50C" size="50">
+                </th>
+            </tr>
+
+            <tr bgcolor="#FFFFFF" style="line-height:10px;" colspan=3> </tr>
+
+            <tr>
+                <th><span class="output" id="converted"></span>
+                </th>
+            </tr>
+
+        </table>
+    </center>
+    <center>
+        <br>
+        <br>• <b><u>Usage of this Temperature Converter:</b>
+        </u>
+        <br>
+        <br> To use the temperature converter you just need to write the source temperature to be converted and then press 'Enter' (carriage return) and the converted temperature'll be displayed.
+        <br>
+        <br>
+        <br>• <b><u>Types of conversions:</b>
+        </u>
+        <br>
+        <br>
+        <b>1.</b> From Celsius to Farenheit and Kelvin
+        <br>
+        <b>2.</b> From Farenheit to Celsius and Kelvin
+        <br>
+        <b>3.</b> From Kelvin to Celsius and Farenheit
+        <br>
+        <br>
+        <br>• <b><u>Input Examples:</b>
+        </u>
+        <br>
+        <br>
+        <b>1.</b> 32F -> Will convert 32 Farenheit to Celsius and Kelvin
+        <br>
+        <b>2.</b> 45C -> Will convert 45 Celsius to Farenheit and Kelvin
+        <br>
+        <b>3.</b> 297K -> Will convert 200 Kelvin to Celsius and Farenheit
+        <br>
+        <b>4.</b> Also you can use exponential notation (E), for example: 1E3f -> Will convert 100 Farenheit to Celsius and Kelvin
+        <br>
+        <b>5.</b> You can write any substring of Farenheit, Celsius or Kelvin. Also you can write f or F, c or C, k or K... indistinctly.
+        <br><br><br><br>
+
+    </center>
+
+
+    <div style="position: absolute; bottom: 5px;">
+        by Adrián Rodríguez Bazaga and Rudolf Cicko
+    </div>
+
+
+</body>
+
 </html>
