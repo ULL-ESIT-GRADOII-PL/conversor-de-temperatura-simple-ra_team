@@ -1,0 +1,56 @@
+th,
+td {
+    vertical-align: top;
+    text-align: right;
+    font-size: medium;
+    align-items: center;
+}
+
+#converted {
+    color: purple;
+    font-weight: italic;
+    font-size: medium;
+}
+/* Calculated values in italic */
+
+input {
+    text-align: right;
+    /* Align input to the right  */
+
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px 5px;
+    font-size: large;
+}
+body {
+    background-color: #A1D490;
+    /* green */
+
+    font-size: medium;
+    font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+}
+h1 {
+    font-weight: normal;
+    font-family: "Brush Script MT", cursive;
+    background: #339612;
+    padding: 5px 15px;
+    color: white;
+    display: center;
+    font-size: 50px;
+    text-align: center;
+    height: 60px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.floating-box {
+    display: inline-block;
+}
+
+
+
+#image {
+  float: right;
+  margin: 0px 0px 30px 30px;
+  height: inherit;
+  width: auto;
+}
