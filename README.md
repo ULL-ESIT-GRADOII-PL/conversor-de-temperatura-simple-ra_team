@@ -28,7 +28,7 @@ Se ha hecho uso de:
 #### Emmet
 
 Para instalar Emmet en Atom, debemos ir a "Packages" -> "Settings View" -> "Install Packages/Themes", buscamos el paquete Emmet y le damos a Install.
-![Emmet](http://files.catbox.moe/scbjix.png "Emmet")
+![Emmet](http://i.imgur.com/6smWZ3K.png?1 "Emmet")
 
 #### ¿Cómo hemos ido probando que la expresión regular era correcta?
 
