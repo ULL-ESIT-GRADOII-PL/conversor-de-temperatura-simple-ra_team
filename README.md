@@ -5,6 +5,11 @@
 ### Despliegue en github.io:
 * [Click aquí](http://ull-esit-gradoii-pl.github.io/conversor-de-temperatura-simple-ra_team/)
 
+### Validación por www.W3.org (validator.w3.org)
+Resultado: 0 errores y 0 warnings.
+![W3 Validation](http://i.imgur.com/GAirDyj.png?1 "W3 Validation")
+
+
 ### Desarrolladores
 
 #### Adrián Rodríguez Bazaga
