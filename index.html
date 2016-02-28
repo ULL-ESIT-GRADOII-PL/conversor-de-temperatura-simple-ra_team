@@ -3,9 +3,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Temperature Converter using JavaScript">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Temperature,Converter,PL,Language Processors">
-    <meta name="author" content="Adrián Rodríguez Bazaga, Rudolf Cicko">
+  	<meta name="description" content="Temperature Converter using JavaScript">
+	<meta name="keywords" content="HTML,CSS,JavaScript,Temperature,Converter,PL,Language Processors">
+	<meta name="author" content="Adrián Rodríguez Bazaga, Rudolf Cicko">
     <title>Language Processors - Temperature Converter using JavaScript</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/global.css" rel="stylesheet" type="text/css">
@@ -17,13 +17,13 @@
 
     <h1>Temperature Converter
 
-    <img id="image" src="images/temperature.png" width="100" />
+    <img id="image" src="images/temperature.png" alt="Imagen" width="100" />
     </h1>
 
 
 
-    <center>
-        <table>
+    <div id="contenido1">
+        <table id="tabla1">
             <tr id="title">
                 <th>Enter Temperature:</th>
             </tr>
@@ -33,7 +33,7 @@
                 </th>
             </tr>
 
-            <tr bgcolor="#FFFFFF" style="line-height:10px;" colspan=3> </tr>
+            <tr style="line-height:10px; background-color: #FFFFFF;"><th> </th></tr>
 
             <tr>
                 <th><span class="output" id="converted"></span>
@@ -41,17 +41,15 @@
             </tr>
 
         </table>
-    </center>
-    <center>
+    </div>
+    <div id="contenido2">
         <br>
-        <br>• <b><u>Usage of this Temperature Converter:</b>
-        </u>
+        <br>• <b><u>Usage of this Temperature Converter:</b></u>
         <br>
         <br> To use the temperature converter you just need to write the source temperature to be converted and then press 'Enter' (carriage return) and the converted temperature'll be displayed.
         <br>
         <br>
-        <br>• <b><u>Types of conversions:</b>
-        </u>
+        <br>• <b><u>Types of conversions:</b></u>
         <br>
         <br>
         <b>1.</b> From Celsius to Farenheit and Kelvin
@@ -61,8 +59,7 @@
         <b>3.</b> From Kelvin to Celsius and Farenheit
         <br>
         <br>
-        <br>• <b><u>Input Examples:</b>
-        </u>
+        <br>• <b><u>Input Examples:</b></u>
         <br>
         <br>
         <b>1.</b> 32F -> Will convert 32 Farenheit to Celsius and Kelvin
@@ -74,12 +71,9 @@
         <b>4.</b> Also you can use exponential notation (E), for example: 1E3f -> Will convert 100 Farenheit to Celsius and Kelvin
         <br>
         <b>5.</b> You can write any substring of Farenheit, Celsius or Kelvin. Also you can write f or F, c or C, k or K... indistinctly.
-        <br>
-        <br>
-        <br>
-        <br>
+        <br><br><br><br>
 
-    </center>
+    </div>
 
 
     <div style="position: absolute; bottom: 5px;">
